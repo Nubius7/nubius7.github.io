@@ -1,0 +1,116 @@
+/*
+    Hero
+*/
+
+#hero {
+    height: 100vh;
+    width: 100%;
+    
+    --size: 100vmin;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero_continue {
+    position: absolute;
+    bottom: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    z-index: 1;
+}
+
+#hero_continue div {
+    border: solid whitesmoke;
+    transform: skewY(45deg);   
+}
+
+#hero_continue #sec {
+    transform: skewY(-45deg);
+}
+
+#hero_image {
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+    z-index: 1;
+}
+
+#hero_image div{
+    margin: 0;
+    padding: 0;
+    transform: skew(-25deg);
+    background: whitesmoke;
+}
+
+#hero_image .l0 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#hero_image h1 {
+    margin: 0;
+    padding: 0;
+}
+
+/* Sizing */
+
+#hero_image .l0 {
+    width: max(250px, calc(0.4 * var(--size)));
+    height: max(100px, calc(0.15 * var(--size)));
+}
+
+#hero_image .l1 {
+    width: max(80px, calc(0.04 * var(--size)));
+    height: max(80px, calc(0.13 * var(--size)));
+    margin: max(20px, calc(0.04 * var(--size)));
+    display: none;
+}
+
+#hero_image .l2 {
+    width: max(40px, calc(0.02 * var(--size)));
+    height: max(60px, calc(0.11 * var(--size)));
+    margin: max(30px, calc(0.05 * var(--size)));
+    display: none;
+}
+
+#hero_image h1 {
+    font-size: max(24px, calc(0.05 * var(--size)));
+}
+
+#hero_continue {
+    margin-bottom: max(10px, calc(0.08 * var(--size)));
+    padding: max(10px, calc(0.04 * var(--size))) 0px;
+}
+
+#hero_continue div {
+    width: max(20px, calc(0.07 * var(--size)));
+    height: max(20px, calc(0.07 * var(--size)));
+    border-width: max(2px, calc(0.01 * var(--size))) 0;
+}
+
+@media only screen and (min-width: 768px) {
+    #hero_image .l1 {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #hero_image .l2 {
+        display: block;
+    }
+}
