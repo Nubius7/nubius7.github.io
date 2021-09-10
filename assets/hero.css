@@ -4,7 +4,6 @@
 
 #hero {
     height: 100vh;
-    max-height: -webkit-fill-available;
     width: 100%;
     
     --size: 100vmin;
@@ -38,7 +37,6 @@
 
 #hero_image {
     height: 100vh;
-    max-height: -webkit-fill-available;
     width: 100%;
 
     display: flex;

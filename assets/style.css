@@ -7,7 +7,7 @@
 */
 
 html {
-    height: calc(100% + 60px);
+    overflow: hidden;
 
     font-family: "Major Mono Display", sans-serif;
     color: black;
@@ -19,6 +19,8 @@ html {
 }
 
 body {
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
     margin: 0;
 }
 
