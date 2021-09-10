@@ -9,14 +9,15 @@
 html {
     font-family: "Major Mono Display", sans-serif;
     color: black;
-}
 
-body {
-    margin: 0;
     background-image: url('wallpaper.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+}
+
+body {
+    margin: 0;
 }
 
 #navigator {
