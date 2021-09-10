@@ -15,9 +15,9 @@ window.onload = function() {
     });
 
     /* Fixing Background resizing on mobile */
-     var background = document.getElementsByClassName('html');
+    var background = document.getElementsByTagName('html')[0];
     window.addEventListener('resize', (event) => {
-        background.height = window.height + 60;
+        background.style.height = (window.outerHeight - 200) + "px";
     });
-    background.height = window.height + 60;
+    background.style.height = (window.outerHeight - 200) + "px";
 }
