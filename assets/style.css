@@ -9,12 +9,10 @@
 html {
     font-family: "Major Mono Display", sans-serif;
     color: black;
-    height: 100%;
 }
 
 body {
     margin: 0;
-    height: 100%;
     background-image: url('wallpaper.jpg');
     background-size: cover;
     background-position: center;
