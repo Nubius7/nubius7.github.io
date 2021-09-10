@@ -1,7 +1,7 @@
 window.onload = function() {
-    heroContinue = document.getElementById('hero_continue');
-    enableScroll = document.getElementById('enable_scroll');
-    nav = document.getElementById('navigator');
+    var heroContinue = document.getElementById('hero_continue');
+    var enableScroll = document.getElementById('enable_scroll');
+    var nav = document.getElementById('navigator');
 
     heroContinue.addEventListener('click', (event) => {
         event.preventDefault();
