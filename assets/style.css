@@ -9,6 +9,8 @@
 html {
     font-family: "Major Mono Display", sans-serif;
     color: black;
+    padding-bottom: 60px;
+    margin-bottom: -60px;
 
     background-image: url('wallpaper.jpg');
     background-size: cover;

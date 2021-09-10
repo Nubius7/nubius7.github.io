@@ -17,7 +17,7 @@ window.onload = function() {
     /* Fixing Background resizing on mobile */
     var background = document.getElementsByTagName('html')[0];
     window.addEventListener('resize', (event) => {
-        background.style.height = (window.outerHeight - 200) + "px";
+        background.style.height = (window.outerHeight + 60) + "px";
     });
-    background.style.height = (window.outerHeight - 200) + "px";
+    background.style.height = (window.outerHeight + 60) + "px";
 }
